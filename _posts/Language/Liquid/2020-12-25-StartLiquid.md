@@ -21,6 +21,42 @@ comments : true
 
 하지만 **Ruby**를 몰라도 충분히 배울 수 있습니다.( 저도 아예 모르는 상태라..)
 
+# Object, Tag, Filter
+---
+**Liquid** 코드는 크게 **Object, Tag, filter**로 나누어질 수 있습니다.
 
+- Object : 페이지에 보여주는 내용으로 '{{' 와 '}}'를 사용하여 표기합니다. 변수와 같은 개념이라 생각하시면 됩니다.
+
+
+```liquid
+{{ blog.name }}
+```  
+  
+- Tag : 각종 논리 연산과 제어 흐름을 '{%', '%}'를 사용하여 표기합니다.
+태그의 종류에는 **Control Flow, Iteration, Variable Assignment**가 있습니다. 
+
+```liquid
+{% if user %}
+  Hello {{ user.name }}!
+{% endif %}
+```
+>사용자의 이름이 있으면 Hello 사용자의 이름을 출력
+
+- Filter : Object를 출력할 때 조건을 이용하여 변경하여 출력합니다. 조건은 '|'를 사용합니다.
+조건에는 다양한 함수들이 존재합니다.
+
+```liquid
+{{ "/imhyunjun/github/url" | append: ".io" }}
+```
+> /imhyunjun/github/url.io 출력 
+
+다중 필터를 사용 할 수 있는데 이는 오직 변수 한개에만 사용 가능 합니다.
+
+```liquid
+{{ "adam!" | capitalize | prepend: "Hello " }}
+```
+> adam!의 첫글자를 대문자로 만들고 그 앞에 "Hello"를 붙입니다. -> Hello Adam! 
+
+여기까지 Liquid의 기초인 Object, Tag, Filter를 알아보았습니다.
 
 출처 : [Liquid 홈페이지](https://shopify.github.io/liquid/)

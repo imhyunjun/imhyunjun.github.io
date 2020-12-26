@@ -1,6 +1,6 @@
 ---
 layout : post
-title : List.ConvertAll
+title : List-ConvertAll
 category : C#/Unity
 comments : true 
 tags : C#, List

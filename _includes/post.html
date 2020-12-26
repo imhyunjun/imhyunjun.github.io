@@ -35,4 +35,16 @@
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	{% endif %}
+
+	<ul class="related-list">
+		{% for tag in site.tags %}
+		  {% for post in tag[1] %}
+			{% if tag[0] == page.related %}
+			  <li>
+				<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+			  </li>
+			{% endif %}
+		  {% endfor %}
+		{% endfor %}
+		<ul>
 </article>

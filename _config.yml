@@ -34,16 +34,20 @@ instagram : e_myunjun
 #google_analytics
 google_analytics : G-W34ZSS2KED
 
-
-highlighter: rouge
 svg:
   optimize: true
+
 # Build settings
-# theme: minima
-highlighter-theme: monokai
+
+# syntax highlighting
+highlighter: rouge
+highlighter-theme: native
+
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
+gems: 
+  - jekyll-gist
 category_dir: category/
 tag_dir: tag/
 

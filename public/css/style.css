@@ -321,6 +321,8 @@ footer {
 	.each-post{
 		font-size: 0.9em;
 		line-height: 1.5;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.content {
@@ -331,7 +333,7 @@ footer {
 	}
 
 	.sidebar {
-		font-size: 0.8em;
+		font-size: 0.5em;
 		flex: 0 0 auto;
 		flex-flow: row nowrap;
 		height: auto;

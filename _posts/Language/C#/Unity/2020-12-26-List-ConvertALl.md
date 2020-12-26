@@ -1,9 +1,9 @@
 ---
 layout : post
-title : List-ConvertAll
-category : C#/Unity
+title : ConvertAll
+category : C#
 comments : true 
-tags : C#, List
+tags : C#
 related : C#
 ---
 

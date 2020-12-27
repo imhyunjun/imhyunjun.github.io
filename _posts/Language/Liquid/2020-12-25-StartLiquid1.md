@@ -19,7 +19,7 @@ related : Liquid
 
 하지만 **Ruby**를 몰라도 충분히 배울 수 있습니다.( 저도 아예 모르는 상태라..)
 
-# Object, Tag, Filter
+## Object, Tag, Filter
 ---
 **Liquid** 코드는 크게 **Object, Tag, filter**로 나누어질 수 있습니다.
 {%raw%}
